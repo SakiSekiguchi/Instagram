@@ -13,7 +13,7 @@ import FirebaseDatabase
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var tabelView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     var postArray: [PostData] = []
     

@@ -15,7 +15,6 @@ class PostViewController: UIViewController {
     
     var image: UIImage!
     
-    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
     
@@ -42,6 +41,7 @@ class PostViewController: UIViewController {
         UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
         
     }
+    
     
     // キャンセルボタンをタップしたときに呼ばれるメソッド
     @IBAction func handleCancelButton(_ sender: Any) {

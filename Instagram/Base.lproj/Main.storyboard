@@ -129,7 +129,7 @@
                         <viewLayoutGuide key="safeArea" id="kPM-Ir-YRq"/>
                     </view>
                     <connections>
-                        <outlet property="tabelView" destination="83z-Pv-ZVE" id="iyq-Ml-q5x"/>
+                        <outlet property="tableView" destination="83z-Pv-ZVE" id="hES-D4-Mmj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPl-cw-wCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -215,7 +215,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="handlePostButton:" destination="lrh-36-Phk" eventType="touchUpInside" id="dY5-i9-SSs"/>
+                                    <action selector="handlePostButton:" destination="lrh-36-Phk" eventType="touchUpInside" id="CVI-AA-cx9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wXy-HQ-bBn">
@@ -250,7 +250,6 @@
                         <viewLayoutGuide key="safeArea" id="wn6-bu-qig"/>
                     </view>
                     <connections>
-                        <outlet property="handlePostButton" destination="jas-T9-JBE" id="ZWb-gL-P9r"/>
                         <outlet property="imageView" destination="bDq-nb-ipS" id="wdv-ea-LWf"/>
                         <outlet property="textField" destination="MZC-m5-BZ1" id="wJ1-F0-RZC"/>
                     </connections>
