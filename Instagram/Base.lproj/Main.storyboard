@@ -128,6 +128,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kPM-Ir-YRq"/>
                     </view>
+                    <connections>
+                        <outlet property="tabelView" destination="83z-Pv-ZVE" id="iyq-Ml-q5x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WPl-cw-wCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
