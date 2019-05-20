@@ -50,10 +50,5 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
     }
-    @IBAction func commentButton(_ sender: Any) {
-        
-        
-        
-    }
     
 }

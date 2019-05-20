@@ -117,13 +117,23 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.setPostData(postArray[indexPath.row])
         
         // セル内のボタンのアクションをソースコードで設定する
-        cell.likeButton.addTarget(self, action:#selector(handleButton(_:forEvent:)), for: .touchUpInside)
+        cell.likeButton.addTarget(self, action:#selector(handleLikeButton(_:forEvent:)), for: .touchUpInside)
+        
+        cell.commentButton.addTarget(self, action: #selector(handleCommentButton(_:forEvent:)), for: .touchUpInside)
         
         return cell
     }
     
+    @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent){
+        print("DEBUG_PRINT: コメントが押されました")
+        let storyboard: UIStoryboard = self.storyboard!
+        let comment = storyboard.instantiateViewController(withIdentifier: "Comment")
+        self.present(comment, animated: true, completion: nil)
+        //self.performSegue(withIdentifier: "toComment", sender: nil)
+    }
+    
     // セル内のボタンがタップされた時に呼ばれるメソッド
-    @objc func handleButton(_ sender: UIButton, forEvent event: UIEvent) {
+    @objc func handleLikeButton(_ sender: UIButton, forEvent event: UIEvent) {
         print("DEBUG_PRINT: likeボタンがタップされました。")
         
         // タップされたセルのインデックスを求める

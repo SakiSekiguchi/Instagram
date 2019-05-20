@@ -44,6 +44,9 @@
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfs-hb-haj">
                         <rect key="frame" x="26" y="364" width="263" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="41" id="0Qp-xo-BPP"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -55,9 +58,6 @@
                             <constraint firstAttribute="width" constant="40" id="zNG-xy-NRR"/>
                         </constraints>
                         <state key="normal" image="comment"/>
-                        <connections>
-                            <action selector="commentButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="rm9-eh-mEo"/>
-                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYR-yO-Q4g">
                         <rect key="frame" x="176" y="323.5" width="113" height="21"/>
