@@ -128,80 +128,10 @@
             </objects>
             <point key="canvasLocation" x="-164" y="967"/>
         </scene>
-        <!--Comment View Controller-->
-        <scene sceneID="HPv-3R-aX1">
-            <objects>
-                <viewController storyboardIdentifier="Comment" id="a9X-vZ-6De" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Qnu-sw-Fsd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Prc-Wm-Mxm">
-                                <rect key="frame" x="0.0" y="64" width="375" height="519"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="ia4-5d-hfr">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ia4-5d-hfr" id="OaK-fG-gtJ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9uN-iE-ec6">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem title="戻る" id="KNn-Mh-NbT">
-                                        <connections>
-                                            <action selector="backButton:" destination="a9X-vZ-6De" id="Dc3-rM-zZo"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cez-p0-qbL">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="wdW-KT-LFh">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="UUx-xS-f6g">
-                                            <connections>
-                                                <segue destination="j68-em-AVi" kind="show" id="IvV-DQ-ook"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="cez-p0-qbL" firstAttribute="top" secondItem="cYx-AQ-eFV" secondAttribute="top" id="6sZ-wH-7oq"/>
-                            <constraint firstItem="cez-p0-qbL" firstAttribute="leading" secondItem="cYx-AQ-eFV" secondAttribute="leading" id="FF5-mT-dw0"/>
-                            <constraint firstItem="cez-p0-qbL" firstAttribute="trailing" secondItem="cYx-AQ-eFV" secondAttribute="trailing" id="HAm-Eb-VNG"/>
-                            <constraint firstItem="9uN-iE-ec6" firstAttribute="trailing" secondItem="cYx-AQ-eFV" secondAttribute="trailing" id="RMt-pQ-0Hz"/>
-                            <constraint firstAttribute="bottom" secondItem="9uN-iE-ec6" secondAttribute="bottom" id="Tlz-zA-Gzo"/>
-                            <constraint firstItem="Prc-Wm-Mxm" firstAttribute="leading" secondItem="cYx-AQ-eFV" secondAttribute="leading" id="YTI-Pq-Gxb"/>
-                            <constraint firstItem="9uN-iE-ec6" firstAttribute="top" secondItem="Prc-Wm-Mxm" secondAttribute="bottom" constant="40" id="l1m-RW-1Lo"/>
-                            <constraint firstItem="Prc-Wm-Mxm" firstAttribute="trailing" secondItem="cYx-AQ-eFV" secondAttribute="trailing" id="pBE-Rq-GyU"/>
-                            <constraint firstItem="9uN-iE-ec6" firstAttribute="leading" secondItem="cYx-AQ-eFV" secondAttribute="leading" id="wuf-as-bSG"/>
-                            <constraint firstItem="Prc-Wm-Mxm" firstAttribute="top" secondItem="cez-p0-qbL" secondAttribute="bottom" id="yRc-V9-dbt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="cYx-AQ-eFV"/>
-                    </view>
-                    <toolbarItems/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="tableView" destination="Prc-Wm-Mxm" id="CY4-VN-2Qq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JV5-Wy-umd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="775.20000000000005" y="1742.8785607196403"/>
-        </scene>
         <!--Input View Controller-->
         <scene sceneID="3de-F8-9mM">
             <objects>
-                <viewController id="j68-em-AVi" customClass="inputViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Input" id="j68-em-AVi" customClass="InputViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ib-XX-qkg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -216,39 +146,47 @@
                                 <rect key="frame" x="324" y="211" width="31" height="30"/>
                                 <state key="normal" title="送信"/>
                                 <connections>
-                                    <action selector="addButton:" destination="j68-em-AVi" eventType="touchUpInside" id="vTL-8t-PNX"/>
+                                    <action selector="addButton:" destination="j68-em-AVi" eventType="touchUpInside" id="1Q2-pC-xLH"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-eI-1Md">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-eI-1Md">
                                 <rect key="frame" x="20" y="71" width="335" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="jh7-2I-OkQ"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJg-OL-E6P">
+                                <rect key="frame" x="324" y="261" width="31" height="30"/>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="returnButton:" destination="j68-em-AVi" eventType="touchUpInside" id="G0e-f4-IRz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="1C5-s6-fBY" firstAttribute="trailing" secondItem="7cU-eI-1Md" secondAttribute="trailing" constant="20" id="8LC-4d-b9F"/>
                             <constraint firstItem="1C5-s6-fBY" firstAttribute="trailing" secondItem="iqu-bQ-cpf" secondAttribute="trailing" constant="20" id="IIt-lb-HkQ"/>
+                            <constraint firstItem="MJg-OL-E6P" firstAttribute="top" secondItem="iqu-bQ-cpf" secondAttribute="bottom" constant="20" id="NMb-0e-dPN"/>
                             <constraint firstItem="7cU-eI-1Md" firstAttribute="leading" secondItem="1C5-s6-fBY" secondAttribute="leading" constant="20" id="QR3-FL-WBP"/>
                             <constraint firstItem="SH1-YY-cCR" firstAttribute="leading" secondItem="1C5-s6-fBY" secondAttribute="leading" constant="20" id="fyr-ZR-EcJ"/>
                             <constraint firstItem="SH1-YY-cCR" firstAttribute="top" secondItem="1C5-s6-fBY" secondAttribute="top" constant="20" id="kHv-w7-mpW"/>
+                            <constraint firstItem="1C5-s6-fBY" firstAttribute="trailing" secondItem="MJg-OL-E6P" secondAttribute="trailing" constant="20" id="lbV-Lu-UqT"/>
                             <constraint firstItem="7cU-eI-1Md" firstAttribute="top" secondItem="SH1-YY-cCR" secondAttribute="bottom" constant="10" id="rtM-BZ-nHO"/>
                             <constraint firstItem="iqu-bQ-cpf" firstAttribute="top" secondItem="7cU-eI-1Md" secondAttribute="bottom" constant="20" id="sdb-zN-KZh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1C5-s6-fBY"/>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="7cU-eI-1Md" id="bpA-Qk-sOF"/>
+                        <outlet property="textView" destination="7cU-eI-1Md" id="cb3-dk-JYG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AJ3-4g-SB9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1458" y="1734"/>
+            <point key="canvasLocation" x="722" y="1703"/>
         </scene>
         <!--Image Select View Controller-->
         <scene sceneID="jol-lt-3wb">
