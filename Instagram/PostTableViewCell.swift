@@ -18,14 +18,15 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var commentLabel: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     
@@ -50,12 +51,31 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
         
+        
+        
         if postData.comments.isEmpty{
-            self.commentLabel.text = "コメントはありません"
+            self.commentLabel.text = "コメントがありません"
         }else{
-            self.commentLabel.text = "\(postData.comments)"
+            for var comment in postData.comments{
+                print("\(comment.values)")
+                self.commentLabel.text = "\(comment.values)"
+                for text in comment += comment.values{
+                    self.commentLabel.text = "\(text)\n"
+                }
+
+            }
+        
+            
+            
+            //postData.comments.updateValue("xxx", forKey: "yyy")
+            //            for comment in comments {
+            //                print("*********")
+            //                print(key)
+            //                print(value)
+            //            }
         }
         
     }
+    
     
 }

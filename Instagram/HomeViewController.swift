@@ -139,7 +139,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         //コメント入力画面に遷移
         let input = self.storyboard?.instantiateViewController(withIdentifier: "Input") as! inputViewController
-        input.postData = postData.id
+        input.postData = postData
         self.present(input, animated: true, completion: nil)
         
     }
