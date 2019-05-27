@@ -12,10 +12,10 @@ import FirebaseDatabase
 import SVProgressHUD
 
 class inputViewController: UIViewController {
-
+    
     var postData: PostData!
-//    var comments: [String : String] = [ "1": "test1", "2": "test2",  "3": "test3"] //★
-//    var comments2: [[String : String]] = [["1": "test1"], ["2": "test2"],  ["3": "test3"]] //★
+    //    var comments: [String : String] = [ "1": "test1", "2": "test2",  "3": "test3"] //★
+    //    var comments2: [[String : String]] = [["1": "test1"], ["2": "test2"],  ["3": "test3"]] //★
     
     @IBOutlet weak var textView: UITextView!
     
@@ -29,22 +29,6 @@ class inputViewController: UIViewController {
         
         let tapGesture: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
         self.view.addGestureRecognizer(tapGesture)
-        
-        //comments.updateValue("aaaaa", forKey: "bbbbbb")
-        
-//        for (key, value) in comments {
-//            print("*********")
-//            print(key)
-//            print(value)
-//        }
-        
-//        for comment in comments2 {
-//            for (key, value) in comment {
-//                print("*********")
-//                print(key)
-//                print(value)
-//            }
-//        }
         
     }
     
@@ -69,6 +53,5 @@ class inputViewController: UIViewController {
         //キーボードを閉じる
         view.endEditing(true)
     }
-
-   
+    
 }

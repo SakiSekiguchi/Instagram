@@ -51,9 +51,7 @@ class PostData: NSObject {
         if let comments = valueDictionary["comments"] as? [[String : String]] {
             self.comments = comments
         }
-        
-        
-
+    
     }
     
 }

@@ -124,7 +124,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
     
-     // セル内のボタンがタップされた時に呼ばれるメソッド
+    // セル内のボタンがタップされた時に呼ばれるメソッド
     //コメントボタン
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent){
         print("DEBUG_PRINT: コメントが押されました")
@@ -180,6 +180,5 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
         }
     }
-
     
 }

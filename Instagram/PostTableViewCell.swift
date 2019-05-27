@@ -18,7 +18,6 @@ class PostTableViewCell: UITableViewCell {
     @IBOutlet weak var commentButton: UIButton!
     @IBOutlet weak var commentLabel: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -51,31 +50,22 @@ class PostTableViewCell: UITableViewCell {
             self.likeButton.setImage(buttonImage, for: .normal)
         }
         
-        
+        //var commentArray: [String] = []
         
         if postData.comments.isEmpty{
             self.commentLabel.text = "コメントがありません"
         }else{
-            for var comment in postData.comments{
-                print("\(comment.values)")
-                self.commentLabel.text = "\(comment.values)"
-                for text in comment += comment.values{
-                    self.commentLabel.text = "\(text)\n"
-                }
-
+            self.commentLabel.text = ""
+            for comments in postData.comments{
+                let dispName: String = comments["name"]!
+                let dispComment: String = comments["comment"]!
+                
+                self.commentLabel.text?.append("\(dispName): \(dispComment)\n")
+                
             }
-        
             
-            
-            //postData.comments.updateValue("xxx", forKey: "yyy")
-            //            for comment in comments {
-            //                print("*********")
-            //                print(key)
-            //                print(value)
-            //            }
         }
         
     }
-    
-    
+
 }
