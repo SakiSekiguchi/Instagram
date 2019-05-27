@@ -38,7 +38,7 @@ class PostViewController: UIViewController {
         SVProgressHUD.showSuccess(withStatus: "投稿しました")
         
         // 全てのモーダルを閉じる
-        self.dismiss(animated: true, completion: nil)
+        UIApplication.shared.keyWindow?.rootViewController?.dismiss(animated: true, completion: nil)
         
     }
     
